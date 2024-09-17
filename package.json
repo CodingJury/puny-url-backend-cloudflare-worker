@@ -1,0 +1,16 @@
+{
+  "name": "puny-url-backend-cloudflare-worker",
+  "scripts": {
+    "dev": "wrangler dev src/index.ts",
+    "deploy": "wrangler deploy --minify src/index.ts"
+  },
+  "dependencies": {
+    "@upstash/redis": "^1.34.0",
+    "hono": "^4.6.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240529.0",
+    "wrangler": "^3.78.3"
+  }
+}
